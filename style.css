@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    transition: all 0.3s ease; /* Smooth transition effect for hover */
+  }
+  
+  body {
+    background-color: #f4f7fa; /* Light background for a cleaner look */
+    color: #333; /* Dark text for better contrast */
+  }
+  
+  /* Carousel Image Styling */
+  .carousel-item img {
+    width: 100%;
+    height: 93vh;
+    object-fit: cover; /* Ensures images cover the space without distortion */
+    transition: transform 0.5s ease; /* Smooth zoom-in effect on hover */
+  }
+  
+  .carousel-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* About Us Section */
+  .About_Us {
+    min-width: 90%;
+    max-height: 700px;
+    background-color: #ffffff; /* White background to highlight content */
+    padding: 30px;
+    border-radius: 8px; /* Soft rounded corners for a modern look */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Service Section Styling */
+  .services .row > * {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .row.my-5 {
+    display: flex;
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+    gap: 15px; /* Space between elements */
+  }
+  
+  .offer_style {
+    background: linear-gradient(135deg, #3994d6, #3fb8e1); /* Gradient background */
+    color: #fff; /* White text for better contrast */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .offer_style:hover {
+    background: linear-gradient(135deg, #4aafd6, #46c4e6); /* Darker gradient on hover */
+  }
+  
+  /* Juhu Image Styling */
+  .Juhuimg {
+    height: 20rem;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Hover effect */
+  }
+  
+  .Juhuimg:hover {
+    transform: scale(1.1); /* Slight zoom-in effect */
+  }
+  
+  /* Footer Styling */
+  .footer, .footer2 {
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Medium Image Wrapper */
+  .card-img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .medium-img {
+    max-height: 500px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+  }
+  
+  /* Responsive CSS Code */
+  
+  /* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 576px) {
+    .carousel-item img {
+      height: 75vh; /* Reduce height for smaller devices */
+    }
+  
+    .About_Us {
+      min-width: 100%;
+      max-height: 600px;
+    }
+  
+    .Juhuimg {
+      height: 15rem;
+    }
+  
+    .offer_style {
+      padding: 15px;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .carousel-item img {
+      height: 80vh;
+    }
+  
+    .About_Us {
+      min-width: 100%;
+      max-height: 650px;
+    }
+  
+    .Juhuimg {
+      height: 17rem;
+    }
+  
+    .offer_style {
+      padding: 20px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .carousel-item img {
+      height: 85vh;
+    }
+  
+    .About_Us {
+      min-width: 95%;
+      max-height: 650px;
+    }
+  
+    .Juhuimg {
+      height: 18rem;
+    }
+  
+    .offer_style {
+      padding: 25px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .carousel-item img {
+      height: 93vh;
+    }
+  
+    .About_Us {
+      min-width: 90%;
+      max-height: 700px;
+    }
+  
+    .Juhuimg {
+      height: 20rem;
+    }
+  
+    .offer_style {
+      padding: 30px;
+    }
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .carousel-item img {
+      height: 93vh;
+    }
+  
+    .About_Us {
+      min-width: 85%;
+      max-height: 700px;
+    }
+  
+    .Juhuimg {
+      height: 22rem;
+    }
+  
+    .offer_style {
+      padding: 35px;
+    }
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    .carousel-item img {
+      height: 93vh;
+    }
+  
+    .About_Us {
+      min-width: 80%;
+      max-height: 700px;
+    }
+  
+    .Juhuimg {
+      height: 24rem;
+    }
+  
+    .offer_style {
+      padding: 40px;
+    }
+  }
+  
